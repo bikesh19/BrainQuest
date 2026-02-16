@@ -1,6 +1,6 @@
 # 🎓 Project Submission: BrainQuest (Advanced React Quiz Application)
 
-**Student Name:** Bikesh  
+**Student Name:** Bikesh Sah
 **Project Title:** BrainQuest - Dynamic Knowledge Evaluation System  
 **Submission Date:** February 16, 2026  
 **Assignment Goal:** Develop a high-performance, interactive web application using React.js that demonstrates complex state management, synchronized timing logic, and a dynamic scoring algorithm.
