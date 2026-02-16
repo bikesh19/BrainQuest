@@ -1,4 +1,4 @@
-import { useState, useCallback } from "react"
+import { useState, useCallback, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import QuestionArea from "./components/QuestionArea"
 import ProgressBar from "./components/ProgressBar"
@@ -11,20 +11,37 @@ function App() {
   const [score, setScore] = useState(0);
   const [completed, setCompleted] = useState(false)
   const [showFeedback, setShowFeedback] = useState(false);
+  const [timeLeft, setTimeLeft] = useState(15);
   const [shuffledQuestions, setShuffledQuestions] = useState(() => {
     return [...questions]
       .sort(() => Math.random() - 0.5)
       .slice(0, 10);
   });
 
+  useEffect(() => {
+    if (showFeedback || completed) return;
+
+    if (timeLeft <= 0) {
+      handleTimeUp();
+      return;
+    }
+
+    const timer = setInterval(() => {
+      setTimeLeft((prev) => prev - 1);
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, [timeLeft, showFeedback, completed]);
+
   const handleAnswer = useCallback((option) => {
     if (showFeedback) return;
     setSelectedAnswer(option);
     setShowFeedback(true);
     if (option === shuffledQuestions[currentQuestion].answer) {
-      setScore(prev => prev + 1)
+      const bonus = timeLeft * 10;
+      setScore(prev => prev + 100 + bonus);
     }
-  }, [showFeedback, currentQuestion, shuffledQuestions]);
+  }, [showFeedback, currentQuestion, shuffledQuestions, timeLeft]);
 
   const handleTimeUp = useCallback(() => {
     if (!showFeedback) {
@@ -37,6 +54,7 @@ function App() {
       setCurrentQuestion(currentQuestion + 1)
       setSelectedAnswer(null)
       setShowFeedback(false)
+      setTimeLeft(15)
     }
     else {
       setCompleted(true)
@@ -53,6 +71,7 @@ function App() {
     setScore(0);
     setShowFeedback(false);
     setCompleted(false);
+    setTimeLeft(15);
   }
 
   return (
@@ -76,7 +95,7 @@ function App() {
           {!showFeedback && (
             <Timer
               duration={15}
-              onTimeUp={handleTimeUp}
+              timeLeft={timeLeft}
               resetTrigger={currentQuestion}
             />
           )}
@@ -94,7 +113,7 @@ function App() {
             <h2 className="text-4xl font-bold text-green-400 mb-6">Quiz Complete!</h2>
             <div className="mb-8">
               <p className="text-gray-400 text-lg mb-2">Your Final Score</p>
-              <p className="text-7xl font-black text-yellow-400">{score}<span className="text-3xl text-gray-500">/10</span></p>
+              <p className="text-7xl font-black text-yellow-400">{score}</p>
             </div>
             <button
               onClick={playagain}

@@ -1,16 +1,83 @@
-# BrainQuest
+# 🎓 Project Submission: BrainQuest (Advanced React Quiz Application)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Student Name:** Bikesh  
+**Project Title:** BrainQuest - Dynamic Knowledge Evaluation System  
+**Submission Date:** February 16, 2026  
+**Assignment Goal:** Develop a high-performance, interactive web application using React.js that demonstrates complex state management, synchronized timing logic, and a dynamic scoring algorithm.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📝 1. Project Overview
+**BrainQuest** is a sophisticated quiz platform designed to provide an engaging user experience through real-time feedback and competitive scoring. The primary objective of this project was to move beyond a simple multiple-choice interface and implement a system where performance is measured not just by accuracy, but by cognitive speed.
 
-## React Compiler
+## 🚀 2. Featured Capabilities
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🧠 Dynamic Knowledge Pool
+- **Randomized Sessions**: Utilizes a randomization algorithm to select 10 unique questions from a diverse pool for every new game.
+- **Instant Response Feedback**: Provides immediate visual cues (Green for Correct, Red for Incorrect) to facilitate active learning.
 
-## Expanding the ESLint configuration
+### ⏱️ Advanced Scoring & Timing
+- **Time-Relative Scoring**: Implemented a logic where the score is a function of time: `Base Points (100) + (Seconds Remaining * 10)`.
+- **Integrated Countdown**: A unified timer state that dictates the scoring window and automatically progresses the quiz upon expiration.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🎭 Visual & Interactive UI
+- **Glassmorphic Aesthetic**: Modern UI design utilizing backdrop blurs, gradients, and subtle borders.
+- **Fluid Animations**: Leveraging `framer-motion` for state transitions, ensuring a premium "application" feel rather than a static website.
+- **Responsive Architecture**: Fully optimized for mobile, tablet, and desktop viewports.
+
+## 🛠️ 3. Technical Implementation (Tech Stack)
+
+| Component | Technology | Rationale |
+| :--- | :--- | :--- |
+| **Logic** | React 19 | Leveraging the latest Hooks (`useCallback`, `useEffect`) for performance. |
+| **Styling** | Tailwind CSS 4 | Utility-first styling for rapid, consistent, and modern UI development. |
+| **Animation** | Framer Motion | Providing physics-based animations for a professional user experience. |
+| **Tooling** | Vite | High-speed build tool and development server. |
+| **Deployment** | Vercel | Scalable hosting for modern web applications. |
+
+## 🏗️ 4. Project Structure
+```text
+BrainQuest/
+├── src/
+│   ├── components/
+│   │   ├── QuestionArea.jsx # Handles answer logic & display
+│   │   ├── ProgressBar.jsx  # Visual progress tracking
+│   │   └── Timer.jsx         # Controlled circular timer component
+│   ├── data/
+│   │   └── questions.js      # Centralized question repository
+│   ├── App.jsx               # Root logic, scoring, and state orchestration
+│   └── main.jsx              # Entry point
+└── public/                   # Static assets & favicon
+```
+
+## 🎮 5. Operational Instructions
+
+### Local Development Setup
+1. **Clone & Enter**:
+   ```bash
+   git clone https://github.com/bikesh19/BrainQuest.git
+   cd BrainQuest
+   ```
+2. **Dependency Installation**:
+   ```bash
+   npm install
+   ```
+3. **Execution**:
+   ```bash
+   npm run dev
+   ```
+4. **Access**: Navigate to `http://localhost:5173`.
+
+### Game Flow
+1. **Initialization**: The app shuffles and selects 10 questions.
+2. **Engagement**: Read questions and select an answer before the 15-second timer expires.
+3. **Feedback**: Review the correction; click "Continue" to progress.
+4. **Conclusion**: View the final performance score and opt for a "Play Again" session to reset the environment.
+
+## 🤝 6. Conclusion
+This assignment demonstrates the successful integration of React's state management with external libraries like Framer Motion and Tailwind CSS. The implementation of the **Time-Relative Scoring** specifically addresses the requirement for complex logic handling within the React lifecycle.
+
+---
+**Author:** Bikesh  
+
+⭐ *Optimized for academic review and technical evaluation.*
