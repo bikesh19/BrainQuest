@@ -61,6 +61,15 @@ function Home({ onStart }) {
                 </span>
                 <div className="absolute inset-0 bg-linear-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000" />
             </motion.button>
+
+            <motion.div
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ delay: 0.5 }}
+                className="mt-12 pt-6 border-t border-white/5 text-xs text-slate-500 font-medium tracking-tight"
+            >
+                Copyright Bikesh Sah {new Date().getFullYear()}
+            </motion.div>
         </motion.div>
     );
 }
