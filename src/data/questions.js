@@ -400,26 +400,6 @@ export const questions = [
     "answer": "Zebra"
   },
   {
-    "question": "What is the capital of Japan?",
-    "options": [
-      "Tokyo",
-      "Osaka",
-      "Kyoto",
-      "Nagoya"
-    ],
-    "answer": "Tokyo"
-  },
-  {
-    "question": "Which is the largest continent?",
-    "options": [
-      "Asia",
-      "Africa",
-      "North America",
-      "Europe"
-    ],
-    "answer": "Asia"
-  },
-  {
     "question": "Which country is home to the Kangaroo?",
     "options": [
       "Australia",
@@ -428,46 +408,6 @@ export const questions = [
       "Brazil"
     ],
     "answer": "Australia"
-  },
-  {
-    "question": "What is the capital of Germany?",
-    "options": [
-      "Berlin",
-      "Munich",
-      "Frankfurt",
-      "Hamburg"
-    ],
-    "answer": "Berlin"
-  },
-  {
-    "question": "Which river is the longest in the world?",
-    "options": [
-      "Nile",
-      "Amazon",
-      "Yangtze",
-      "Mississippi"
-    ],
-    "answer": "Nile"
-  },
-  {
-    "question": "What is the capital of France?",
-    "options": [
-      "Paris",
-      "Lyon",
-      "Marseille",
-      "Nice"
-    ],
-    "answer": "Paris"
-  },
-  {
-    "question": "Which ocean is the largest on Earth?",
-    "options": [
-      "Pacific",
-      "Atlantic",
-      "Indian",
-      "Arctic"
-    ],
-    "answer": "Pacific"
   },
   {
     "question": "What is the smallest country in the world?",
@@ -480,26 +420,6 @@ export const questions = [
     "answer": "Vatican City"
   },
   {
-    "question": "Which desert is the largest in Africa?",
-    "options": [
-      "Sahara",
-      "Kalahari",
-      "Namib",
-      "Libyan"
-    ],
-    "answer": "Sahara"
-  },
-  {
-    "question": "What is the capital of Italy?",
-    "options": [
-      "Rome",
-      "Milan",
-      "Venice",
-      "Florence"
-    ],
-    "answer": "Rome"
-  },
-  {
     "question": "Mount Everest is located in which mountain range?",
     "options": [
       "Himalayas",
@@ -508,16 +428,6 @@ export const questions = [
       "Rockies"
     ],
     "answer": "Himalayas"
-  },
-  {
-    "question": "What is the capital of Spain?",
-    "options": [
-      "Madrid",
-      "Barcelona",
-      "Seville",
-      "Valencia"
-    ],
-    "answer": "Madrid"
   },
   {
     "question": "Which country has the largest population?",
@@ -600,26 +510,6 @@ export const questions = [
     "answer": "Canberra"
   },
   {
-    "question": "What is the chemical symbol for Water?",
-    "options": [
-      "H2O",
-      "CO2",
-      "O2",
-      "NaCl"
-    ],
-    "answer": "H2O"
-  },
-  {
-    "question": "Which planet is known as the Red Planet?",
-    "options": [
-      "Mars",
-      "Venus",
-      "Jupiter",
-      "Saturn"
-    ],
-    "answer": "Mars"
-  },
-  {
     "question": "What is the center of an atom called?",
     "options": [
       "Nucleus",
@@ -648,36 +538,6 @@ export const questions = [
       "Hydrogen"
     ],
     "answer": "Carbon Dioxide"
-  },
-  {
-    "question": "Which is the largest planet in our solar system?",
-    "options": [
-      "Jupiter",
-      "Saturn",
-      "Neptune",
-      "Uranus"
-    ],
-    "answer": "Jupiter"
-  },
-  {
-    "question": "What is the chemical symbol for Gold?",
-    "options": [
-      "Au",
-      "Ag",
-      "Pb",
-      "Fe"
-    ],
-    "answer": "Au"
-  },
-  {
-    "question": "Who developed the theory of relativity?",
-    "options": [
-      "Albert Einstein",
-      "Isaac Newton",
-      "Stephen Hawking",
-      "Niels Bohr"
-    ],
-    "answer": "Albert Einstein"
   },
   {
     "question": "What is the hardest natural substance?",
@@ -738,16 +598,6 @@ export const questions = [
       "Vacuole"
     ],
     "answer": "Mitochondria"
-  },
-  {
-    "question": "Which planet is closest to the Sun?",
-    "options": [
-      "Mercury",
-      "Venus",
-      "Earth",
-      "Mars"
-    ],
-    "answer": "Mercury"
   },
   {
     "question": "What is the speed of light approximately?",
@@ -1310,16 +1160,6 @@ export const questions = [
     "answer": "O"
   },
   {
-    "question": "What is the chemical symbol for Carbon?",
-    "options": [
-      "C",
-      "O2",
-      "CO2",
-      "H2O"
-    ],
-    "answer": "C"
-  },
-  {
     "question": "What is the chemical symbol for Nitrogen?",
     "options": [
       "N",
@@ -1340,16 +1180,6 @@ export const questions = [
     "answer": "H"
   },
   {
-    "question": "What is the chemical symbol for Iron?",
-    "options": [
-      "Fe",
-      "O2",
-      "CO2",
-      "H2O"
-    ],
-    "answer": "Fe"
-  },
-  {
     "question": "What is the chemical symbol for Silver?",
     "options": [
       "Ag",
@@ -1358,16 +1188,6 @@ export const questions = [
       "H2O"
     ],
     "answer": "Ag"
-  },
-  {
-    "question": "What is the chemical symbol for Gold?",
-    "options": [
-      "Au",
-      "O2",
-      "CO2",
-      "H2O"
-    ],
-    "answer": "Au"
   },
   {
     "question": "What is the chemical symbol for Mercury?",
@@ -1398,16 +1218,6 @@ export const questions = [
       "H2O"
     ],
     "answer": "Cu"
-  },
-  {
-    "question": "What is the chemical symbol for Sodium?",
-    "options": [
-      "Na",
-      "O2",
-      "CO2",
-      "H2O"
-    ],
-    "answer": "Na"
   },
   {
     "question": "What is the chemical symbol for Potassium?",
@@ -1461,79 +1271,152 @@ export const questions = [
   },
   {
     "question": "In a right-angled triangle, if one side is 3 and the other is 4, what is the hypotenuse?",
-    "options": ["5", "6", "7", "4"],
+    "options": [
+      "5",
+      "6",
+      "7",
+      "4"
+    ],
     "answer": "5"
   },
   {
     "question": "The sum of interior angles of a triangle is:",
-    "options": ["180°", "90°", "360°", "270°"],
+    "options": [
+      "180°",
+      "90°",
+      "360°",
+      "270°"
+    ],
     "answer": "180°"
   },
   {
     "question": "In a circle, the angle subtended by a semicircle is:",
-    "options": ["90°", "180°", "60°", "45°"],
+    "options": [
+      "90°",
+      "180°",
+      "60°",
+      "45°"
+    ],
     "answer": "90°"
   },
   {
     "question": "The area of a triangle with base 10 and height 5 is:",
-    "options": ["25", "50", "15", "20"],
+    "options": [
+      "25",
+      "50",
+      "15",
+      "20"
+    ],
     "answer": "25"
   },
   {
     "question": "If sin θ = 1/2, then θ in degrees is:",
-    "options": ["30°", "45°", "60°", "90°"],
+    "options": [
+      "30°",
+      "45°",
+      "60°",
+      "90°"
+    ],
     "answer": "30°"
   },
   {
     "question": "In a right triangle, if hypotenuse = 13 and one side = 5, the other side is:",
-    "options": ["12", "10", "8", "11"],
+    "options": [
+      "12",
+      "10",
+      "8",
+      "11"
+    ],
     "answer": "12"
   },
   {
     "question": "The circumference of a circle with radius 7 is:",
-    "options": ["44", "21", "49", "14"],
+    "options": [
+      "44",
+      "21",
+      "49",
+      "14"
+    ],
     "answer": "44"
   },
   {
     "question": "The sum of exterior angles of any polygon is:",
-    "options": ["360°", "180°", "540°", "90°"],
+    "options": [
+      "360°",
+      "180°",
+      "540°",
+      "90°"
+    ],
     "answer": "360°"
   },
   {
     "question": "The distance between the centroid and the orthocenter of an equilateral triangle is:",
-    "options": ["0", "1", "Depends on triangle", "√3"],
+    "options": [
+      "0",
+      "1",
+      "Depends on triangle",
+      "√3"
+    ],
     "answer": "0"
   },
   {
     "question": "In a 30°-60°-90° triangle, the ratio of sides opposite 30°:60°:90° is:",
-    "options": ["1:√3:2", "1:1:√2", "√3:1:2", "1:2:√3"],
+    "options": [
+      "1:√3:2",
+      "1:1:√2",
+      "√3:1:2",
+      "1:2:√3"
+    ],
     "answer": "1:√3:2"
   },
   {
     "question": "If tan θ = 1, θ in degrees is:",
-    "options": ["45°", "30°", "60°", "90°"],
+    "options": [
+      "45°",
+      "30°",
+      "60°",
+      "90°"
+    ],
     "answer": "45°"
   },
   {
     "question": "The area of a circle with radius r is:",
-    "options": ["πr²", "2πr", "πd", "r²/2"],
+    "options": [
+      "πr²",
+      "2πr",
+      "πd",
+      "r²/2"
+    ],
     "answer": "πr²"
   },
   {
     "question": "In a triangle, if two sides are equal, the triangle is called:",
-    "options": ["Isosceles", "Equilateral", "Scalene", "Right"],
+    "options": [
+      "Isosceles",
+      "Equilateral",
+      "Scalene",
+      "Right"
+    ],
     "answer": "Isosceles"
   },
   {
     "question": "The Pythagoras theorem is applicable in:",
-    "options": ["Right-angled triangle", "Equilateral triangle", "Scalene triangle", "All triangles"],
+    "options": [
+      "Right-angled triangle",
+      "Equilateral triangle",
+      "Scalene triangle",
+      "All triangles"
+    ],
     "answer": "Right-angled triangle"
   },
   {
     "question": "The ratio of the sides in a 45°-45°-90° triangle is:",
-    "options": ["1:1:√2", "1:√3:2", "1:2:√3", "1:1:2"],
+    "options": [
+      "1:1:√2",
+      "1:√3:2",
+      "1:2:√3",
+      "1:1:2"
+    ],
     "answer": "1:1:√2"
   }
-
-
 ];
